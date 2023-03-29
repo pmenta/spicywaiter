@@ -21,5 +21,8 @@ const config = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: ["spicywaiter.s3.sa-east-1.amazonaws.com"],
+  }
 };
 export default config;

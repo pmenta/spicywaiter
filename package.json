@@ -8,7 +8,8 @@
     "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cypress": "NODE_ENV='development' cypress open"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^2.3.1",
@@ -36,6 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "autoprefixer": "^10.4.7",
+    "cypress": "^12.9.0",
     "eslint": "^8.34.0",
     "eslint-config-next": "^13.2.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",

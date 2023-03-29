@@ -9,7 +9,8 @@
     "lint": "next lint",
     "start": "next start",
     "prepare": "husky install",
-    "cypress": "NODE_ENV='development' cypress open"
+    "cypress:e2e": "NODE_ENV='development' cypress run",
+    "cypress:unit": "NODE_ENV='development' cypress run --component"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^2.3.1",

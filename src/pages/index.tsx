@@ -5,7 +5,7 @@ import { useUser } from '@auth0/nextjs-auth0/client';
 
 import { api } from "@/utils/api";
 
-const Home: NextPage = () => {
+const Login: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Login;
 
 const AuthShowcase: React.FC = () => {
   const { user } = useUser();

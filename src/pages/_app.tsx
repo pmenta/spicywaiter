@@ -3,8 +3,8 @@ import { UserProvider } from '@auth0/nextjs-auth0/client';
 
 import { api } from "@/utils/api";
 
-import "@/styles/globals.css";
 import type { Session } from "@auth0/nextjs-auth0";
+import { GlobalStyles } from "@/styles/GlobalStyles";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -12,6 +12,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <UserProvider user={session?.user}>
+      <GlobalStyles/>
       <Component {...pageProps} />
     </UserProvider>
   );
